@@ -1,0 +1,16 @@
+切换到bin目录下
+
+wsgen -keep -cp . com.mkyong.ws.HelloWorldImpl
+生成
+GetHelloWorldAsString.java
+GetHelloWorldAsStringResponse.java
+
+导出服务器资源：
+wsimport -keep http://localhost:9999/ws/hello?wsdl
+生成
+GetHelloWorldAsString.java
+GetHelloWorldAsStringResponse.java
+HelloWorld.java
+HelloWorldImplService.java
+ObjectFactory.java
+package-info.java
